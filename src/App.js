@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import "./assets/style/global.scss";
+import MovieList from "./pages/movie/MovieList";
+import Tab from "./components/common/tab";
+import TabBar from "./components/common/tabbar";
+import "./utils/rem";
+import Nav from "./pages/movie/Nav";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Tab />
+      <Nav />
+      <MovieList />
+      <TabBar />
     </div>
   );
 }
